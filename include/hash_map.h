@@ -33,7 +33,8 @@ namespace edu{ namespace vcccd{ namespace vc{ namespace csv15{
                 return *this;
             }
 
-            bool operator!=(const Iterator &other){
+            //using bool because we want to return a true or false value being that something either IS or IS NOT equal to something
+            bool operator!=(const Iterator &other){ //apply this->_current?
                 return _current != other._current;
             }
 
